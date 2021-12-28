@@ -24,3 +24,4 @@ public class Helicopter {
         System.out.printf("Labelling '%s': with S/N '%d'\n",this.getType(),this.getSerialNumber());
     }
 }
+

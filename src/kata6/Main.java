@@ -6,12 +6,12 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 import toys.Car;
 import toys.Helicopter;
-import toys.SerialNumberGenerator;
+import toys.ToyBusiness;
 
 public class Main {
     
-    public static void main(String[] args) {
-        SerialNumberGenerator generator = new SerialNumberGenerator();
+  public static void main(String[] args) {
+        ToyBusiness toyBusiness = new ToyBusiness();
         ArrayList<Car> cars = new ArrayList<>();
         ArrayList<Helicopter> hel = new ArrayList<>();
         
@@ -21,20 +21,14 @@ public class Main {
             line = sc.nextLine();
                 switch(line) {
                     case "car" :
-                        Car newCar = new Car(generator.next());
-                        newCar.pack();
-                        newCar.label();
-                        cars.add(newCar);
+                        cars.add(toyBusiness.createCar());
                         System.out.println("Built cars: "+ cars
                                 .stream()
                                 .map(c -> c.getSerialNumber().toString())
                                 .collect(Collectors.joining(", ")));
                         break;
                     case "helicopter":
-                        Helicopter newHelicopter = new Helicopter(generator.next());
-                        newHelicopter.pack();
-                        newHelicopter.label();
-                        hel.add(newHelicopter);
+                        hel.add(toyBusiness.createHelicopter());
                         System.out.println("Built helicopter: "+ hel
                                 .stream()
                                 .map(c -> c.getSerialNumber().toString())

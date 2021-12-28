@@ -8,3 +8,4 @@ public class SerialNumberGenerator {
         return this.serialNumber++;
      }
 }
+
