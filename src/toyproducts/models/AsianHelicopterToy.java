@@ -7,7 +7,7 @@ public class AsianHelicopterToy implements Toy {
     
     public AsianHelicopterToy( Integer serialNumber){
         this.serialNumber = serialNumber;
-        this.type = "Asian Helicopter";
+        this.type = "Helicopter";
     }
 
     @Override
@@ -26,11 +26,14 @@ public class AsianHelicopterToy implements Toy {
     
     @Override
     public void pack(){
-        System.out.printf("Packing '%s': with S/N '%d'\n",this.getType(),this.getSerialNumber());
+        System.out.printf("Packing '%s': '%d'\n",this.getType(),this.getSerialNumber());
     }
+    
     
     @Override
     public void label(){
-        System.out.printf("Labelling '%s': with S/N '%d'\n",this.getType(),this.getSerialNumber());
+        System.out.printf("Labelling '%s': '%d'\n",this.getType(),this.getSerialNumber());
     }
 }
+
+

@@ -1,9 +1,11 @@
 
 package kata6;
 import business.ToyBusiness;
-//import factories.regionalfactories.AmericanToyFactory;
-import factories.regionalfactories.AsianToyFactory;
+import factories.regionalfactories.AmericanCarToyFactory;
+import factories.regionalfactories.AmericanHelicopterToyFactory;
+import factories.regionalfactories.AmericanSubmarineToyFactory;
 import java.util.ArrayList;
+
 import java.util.Scanner;
 import java.util.stream.Collectors;
 import toyproducts.Toy;
@@ -11,11 +13,11 @@ import toyproducts.Toy;
 public class Main {
     
     public static void main(String[] args) {
-        
-        //AmericanToyFactory americanToyFactory = new AmericanToyFactory();
-        AsianToyFactory asianToyFactory = new AsianToyFactory();
-        
-        ToyBusiness toyBusiness =  new ToyBusiness(asianToyFactory);
+        //AsianToyFactory asianCarToyFactory = new AsianToyFactory();
+        ToyBusiness toyBusiness =  new ToyBusiness();
+        toyBusiness.add("car", new AmericanCarToyFactory());
+        toyBusiness.add("helicopter", new AmericanHelicopterToyFactory());
+        toyBusiness.add("submarine", new AmericanSubmarineToyFactory());
         ArrayList<Toy> toys = new ArrayList<>();
         
         Scanner sc = new Scanner(System.in);
@@ -23,6 +25,7 @@ public class Main {
         while(!"exit".equals(line)){
             line = sc.nextLine();
                 switch(line) {
+                    case "submarine" :
                     case "car" :
                     case "helicopter":
                         toys.add(toyBusiness.produceToy(line));
@@ -43,4 +46,3 @@ public class Main {
         }
     }
 }
-
