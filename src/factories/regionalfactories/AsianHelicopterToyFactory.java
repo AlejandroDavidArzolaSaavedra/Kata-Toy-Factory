@@ -5,6 +5,7 @@ import toyproducts.models.AsianHelicopterToy;
 
 public class AsianHelicopterToyFactory extends ToyFactory {
       
+    
     private AsianHelicopterToy createAsianHelicopter(Integer serialNumber){
         AsianHelicopterToy newHelicopter = new AsianHelicopterToy(serialNumber);
         return newHelicopter;
@@ -16,3 +17,5 @@ public class AsianHelicopterToyFactory extends ToyFactory {
     }
     
 }
+
+

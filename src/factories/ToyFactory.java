@@ -1,10 +1,11 @@
 package factories;
+import static factories.SerialNumberGenerator.getInstance;
 import toyproducts.Toy;
 
 public abstract class ToyFactory {
     
-    public Toy produceToy(Integer serialNumber){
-        Toy toy = this.createToy(serialNumber);
+    public Toy produceToy(){
+        Toy toy = this.createToy(getInstance().next());
         toy.pack();
         toy.label();
         return toy;
@@ -12,3 +13,4 @@ public abstract class ToyFactory {
     
     protected abstract Toy createToy(Integer serialNumber);
 }
+

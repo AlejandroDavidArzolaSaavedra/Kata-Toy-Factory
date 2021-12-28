@@ -2,6 +2,7 @@ package toyproducts.models;
 import toyproducts.Toy;
 
 public class AmericanCarToy implements Toy {
+    
     private final Integer serialNumber;
     private final String type;
     
@@ -34,5 +35,7 @@ public class AmericanCarToy implements Toy {
         System.out.printf("Labelling '%s':'%d'\n",this.getType(),this.getSerialNumber());
     }
 }
+
+
 
 
