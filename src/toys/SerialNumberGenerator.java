@@ -1,3 +1,4 @@
+
 package toys;
 
 public class SerialNumberGenerator {
