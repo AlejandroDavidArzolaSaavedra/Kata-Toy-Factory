@@ -14,7 +14,6 @@ public class Main {
         ToyBusiness toyBusiness = new ToyBusiness();
         ArrayList<Car> cars = new ArrayList<>();
         ArrayList<Helicopter> hel = new ArrayList<>();
-        
         Scanner sc = new Scanner(System.in);
         String line = null;
         while(!"exit".equals(line)){

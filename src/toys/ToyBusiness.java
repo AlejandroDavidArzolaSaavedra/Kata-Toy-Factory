@@ -9,6 +9,7 @@ public class ToyBusiness {
         newCar.label();
         return newCar;
     }
+    
     public Helicopter createHelicopter(){
         Helicopter newHelicopter = new Helicopter(this.serial.next());
         newHelicopter.pack();
