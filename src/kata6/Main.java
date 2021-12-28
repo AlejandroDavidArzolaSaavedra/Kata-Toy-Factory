@@ -1,17 +1,18 @@
 
 package kata6;
 
+import branches.AsianToyBusiness;
+import business.ToyBusiness;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 import toyproducts.Toy;
-import toys.ToyBusiness;
 
 public class Main {
     
     public static void main(String[] args) {
-        
-        ToyBusiness toyBusiness = new ToyBusiness();
+        //ToyBusiness toyBusiness = new AmericanToyBusiness();
+        ToyBusiness toyBusiness =  new AsianToyBusiness();
         ArrayList<Toy> toys = new ArrayList<>();
         
         Scanner sc = new Scanner(System.in);
@@ -24,7 +25,9 @@ public class Main {
                         toys.add(toyBusiness.createToy(line));
                         System.out.println("Built Toys: "+ toys
                                 .stream()
-                                .map(Object::toString)
+                                .map((toy) -> {
+                                    return toy.toString();
+                                    })
                                 .collect(Collectors.joining(", ")));
                         break;
                     case "exit":
