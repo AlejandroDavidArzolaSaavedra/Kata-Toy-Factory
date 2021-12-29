@@ -1,9 +1,9 @@
 
 package kata6;
 import business.ToyBusiness;
-import factories.regionalfactories.AmericanCarToyFactory;
-import factories.regionalfactories.AmericanHelicopterToyFactory;
-import factories.regionalfactories.AmericanSubmarineToyFactory;
+import factories.regionalfactories.AsianCarToyFactory;
+import factories.regionalfactories.AsianHelicopterToyFactory;
+import factories.regionalfactories.AsianSubmarineToyFactory;
 import java.util.ArrayList;
 
 import java.util.Scanner;
@@ -15,9 +15,9 @@ public class Main {
     public static void main(String[] args) {
         //AsianToyFactory asianCarToyFactory = new AsianToyFactory();
         ToyBusiness toyBusiness =  new ToyBusiness();
-        toyBusiness.add("car", new AmericanCarToyFactory());
-        toyBusiness.add("helicopter", new AmericanHelicopterToyFactory());
-        toyBusiness.add("submarine", new AmericanSubmarineToyFactory());
+        toyBusiness.add("car", new AsianCarToyFactory());
+        toyBusiness.add("helicopter", new AsianHelicopterToyFactory());
+        toyBusiness.add("submarine", new AsianSubmarineToyFactory());
         ArrayList<Toy> toys = new ArrayList<>();
         
         Scanner sc = new Scanner(System.in);
@@ -46,4 +46,3 @@ public class Main {
         }
     }
 }
-

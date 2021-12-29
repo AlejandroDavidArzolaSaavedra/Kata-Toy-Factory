@@ -1,30 +1,29 @@
 package toyproducts.models;
 import componentfactories.ComponentFactory;
-import componentfactories.regionalcomponentFactories.AmericanComponentFactory;
+import componentfactories.regionalcomponentFactories.AsianComponentFactory;
 import toyproducts.Toy;
 import toyproducts.components.Engine;
 import toyproducts.components.Propeller;
 
-public class AmericanSubmarineToy implements Toy {
-
+public class AsianSubmarineToy implements Toy {
     private final Integer serialNumber;
     private final String type;
     private Engine engine;
     private Propeller propeller;
     final private ComponentFactory componentFactory;
-    public AmericanSubmarineToy( Integer serialNumber){
+    public AsianSubmarineToy( Integer serialNumber){
         this.serialNumber = serialNumber;
         this.type = "Submarine";
-        this.componentFactory = new AmericanComponentFactory();
-    }
-
-    public String getType() {
-        return type;
+        this.componentFactory = new AsianComponentFactory();
     }
 
     @Override
     public String toString() {
-        return "AmericanSubmarineToy{" + "serialNumber=" + serialNumber + '}';
+        return "AsianSubmarineToy{" + "serialNumber=" + serialNumber + '}';
+    }
+
+    public String getType() {
+        return type;
     }
 
     @Override
@@ -34,18 +33,18 @@ public class AmericanSubmarineToy implements Toy {
     
     @Override
     public void pack(){
-        System.out.printf("Packing '%s':'%d'\n",this.getType(),this.getSerialNumber());
+        System.out.printf("Packing '%s': '%d'\n",this.getType(),this.getSerialNumber());
     }
     @Override
     public void label(){
-        System.out.printf("Labelling '%s':'%d'\n",this.getType(),this.getSerialNumber());
+        System.out.printf("Labelling '%s': '%d'\n",this.getType(),this.getSerialNumber());
     }
 
     @Override
     public void prepare() {
         this.engine = this.componentFactory.createEngine();
         this.propeller = this.componentFactory.createPropeller();
-        System.out.println("Motor y helices americanas listos");    
-        }
+        System.out.println("Motor y helices asiaticas listos");     
+    }
 }
 

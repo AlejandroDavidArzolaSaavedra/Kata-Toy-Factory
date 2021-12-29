@@ -13,7 +13,4 @@ public class AsianCarToyFactory extends ToyFactory {
     public Toy createToy(Integer serialNumber) {
         return createAsianCar(serialNumber);
     }
-    
 }
-
-
