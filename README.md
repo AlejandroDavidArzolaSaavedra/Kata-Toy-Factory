@@ -67,6 +67,7 @@ This application is a learning exercise intended for educational purposes to und
 
 Contributions are welcome. If you want to improve this program, follow these steps:
 
+<img align="left" width="150" height="150" src="https://github.com/AlejandroDavidArzolaSaavedra/Kata-Age-Calculator/assets/90756437/81dd2f61-6de4-499f-81e8-47c1cc6ae5ae"></a>
 - Fork this repository.
 - Create a branch for your new feature: `git checkout -b new-feature`
 - Make necessary changes and commit: `git commit -am 'Add new feature'`
