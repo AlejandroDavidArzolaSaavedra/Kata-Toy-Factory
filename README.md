@@ -1,5 +1,7 @@
 <h1 align="center">🚀 Toy Factory Application</h1>
-
+<p align="center">
+  <img src="https://github.com/AlejandroDavidArzolaSaavedra/Kata-Toy-Factory/assets/90756437/45d76a39-e498-44dd-9ee8-84e429fed3a1">
+</p>
 This Java application simulates a toy factory, practicing the implementation of design patterns such as Singleton, Factory Method, and Abstract Factory. The project includes classes for different types of toys, factories for toy production, and regional branches that extend the functionality of the main toy business.
 
 # 👥 Development Team (Ctrl + Click to view profiles)
