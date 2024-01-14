@@ -8,22 +8,6 @@ This Java application simulates a toy factory, practicing the implementation of 
 
 [![GitHub](https://img.shields.io/badge/GitHub-Alejandro%20David%20Arzola%20Saavedra-blue?style=flat-square&logo=github)](https://github.com/AlejandroDavidArzolaSaavedra)
 
-### 📂 Project Structure
-
-The project is organized into several packages:
-
-- **toys:** Contains the main classes related to the toy business logic.
-- **toyproducts:** Defines interfaces for the toys and their components.
-- **toyproducts.models:** Implements concrete classes for different types of toys.
-- **toyproducts.components:** Defines interfaces for various components used in toys.
-- **toyproducts.components.asian/american:** Implements concrete classes for components specific to Asian and American regions.
-- **factories:** Provides the base classes for toy factories.
-- **factories.regionalfactories:** Implements regional toy factories extending the base factory classes.
-- **componentfactories:** Introduces component factories for creating different toy components.
-- **componentfactories.regionalcomponentFactories:** Implements regional component factories for creating components specific to Asian and American regions.
-- **business:** Contains the main `ToyBusiness` class responsible for toy production and a `SerialNumberGenerator` class for generating unique serial numbers.
-- **branches:** Introduces regional branches (`AsianToyBusiness` and `AmericanToyBusiness`) that extend the main `ToyBusiness` class for creating region-specific toys.
-
 ### 🎨 Design Patterns Implemented
 
 #### Singleton Pattern
