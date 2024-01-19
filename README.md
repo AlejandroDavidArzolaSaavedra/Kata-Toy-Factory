@@ -22,10 +22,6 @@ The `ToyBusiness` class uses the Factory Method pattern to create different type
 
 The `AsianComponentFactory` and `AmericanComponentFactory` classes represent Abstract Factories. They produce different types of components for toys (wheels, engines, rotor blades, propellers) with components specific to their respective regions (Asian and American).
 
-### 🌐 Regional Branches
-
-The `AsianToyBusiness` and `AmericanToyBusiness` classes, located in the `branches` package, extend the `ToyBusiness` class to create toys specific to the Asian and American regions. They override the `createToy` method to implement region-specific toy creation logic.
-
 ### 🚀 Usage
 
 The `Main` class in the `kata6` package serves as the entry point to the application. It demonstrates the creation of a `ToyBusiness` instance and the production of toys using different factories and regional branches. Users can interact with the application by entering toy types (car, helicopter, submarine) in the console.
