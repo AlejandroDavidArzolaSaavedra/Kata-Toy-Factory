@@ -36,19 +36,6 @@ The `Main` class in the `kata6` package serves as the entry point to the applica
 2. Run the `Main` class.
 3. Enter the desired toy types (car, helicopter, submarine) to see the production process.
 
-### 🚀 Extending the Application
-
-To extend the application:
-
-1. Create new toy classes in the `toyproducts.models` package.
-2. Implement new factories in the `factories.regionalfactories` package for the new toy types.
-3. If necessary, create new components in the `toyproducts.components.asian/american` packages and their corresponding factories.
-4. Implement regional branches in the `branches` package for each region, extending the `ToyBusiness` class and overriding the `createToy` method.
-
-### 📝 Note
-
-This application is a learning exercise intended for educational purposes to understand design patterns and their implementation in Java.
-
 ## Contributions 🤝
 
 Contributions are welcome. If you want to improve this program, follow these steps:
